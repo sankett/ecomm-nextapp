@@ -7,7 +7,6 @@ export default async function Userserver() {
   const res = await fetch("https://fakestoreapi.com/users");
   const data = await res.json();
  
-
   return (
     <div>
        <div className="text-lg font-bold text-blue-500">React Server Component 
