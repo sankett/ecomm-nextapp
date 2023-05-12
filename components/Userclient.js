@@ -22,14 +22,14 @@ export default function Userclient() {
         {isLoading && (
           <div className="grid grid-cols-1 gap-y-2 gap-x-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xl:gap-x-8  dark:bg-black">
             {tempData.map((user) => (
-              <User  loading={true} />
+              <User key={user}  loading={true} />
             ))}
           </div>
         )}
         {data && (
           <div className="grid grid-cols-1 gap-y-2 gap-x-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xl:gap-x-8   dark:bg-black">
             {data.map((user) => (
-              <User user={user} loading={false} />
+              <User key={user.username} user={user} loading={false} />
             ))}
           </div>
         )}
