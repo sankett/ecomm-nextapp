@@ -3,7 +3,8 @@ import Link from "next/link";
 
 function Header() {
   return (
-    <header className="flex items-center px-4 md:px-12 py-2 justify-between fixed top-0 w-full bg-white z-50 shadow">
+    <header className="flex items-center px-4 md:px-12 py-2 justify-between fixed top-0 w-full bg-white z-50 shadow 
+    bg-gradient-to-r from-indigo-500 to-indigo-900">
       
       <div className="text-sm 
        sm:text-lg 
@@ -11,10 +12,10 @@ function Header() {
        lg:text-2xl
        xl:text-2xl
        2xl:text-2xl
-      font-semibold text-blue-950">Next.JS <span className="text-amber-400">13.4</span></div>        
+      font-semibold text-white">Next.JS <sup className="text-white text-xs">13.4</sup></div>        
      
       
-      <div className="flex items-center space-x-8 text-sm">
+      <div className="flex items-center space-x-4 text-sm text-white">
         <Link href="/" className="button  border-transparent hover:border-blue-600 hover:bg-transparent hover:text-black">
           Home
         </Link>

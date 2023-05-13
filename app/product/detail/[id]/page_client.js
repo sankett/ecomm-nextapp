@@ -26,7 +26,7 @@ export default function ProductDetailPage() {
       
 
   return (
-    <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-8 px-4 py-8 mt-12 pb-10 dark:bg-black">
+    <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-8 px-4 py-8 mt-12 pb-10 ">
       {product && <Image src={product.image} alt={product.title} width={400} height={800} /> }
       {!product && <Image src={'https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg'} 
       className="scale-110 blur-sm grayscale object-contain duration-700 ease-in-out group-hover:opacity-75"

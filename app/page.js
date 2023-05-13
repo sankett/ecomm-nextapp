@@ -7,9 +7,9 @@ export default function Home() {
   
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-20 bg-white dark:bg-black">
+    <main className="flex min-h-screen flex-col items-center justify-between px-4 pt-16 bg-white w-full">
       <section className="flex flex-col space-y-12 pb-44">
-        <h3 className="text-3xl font-bold text-center dark:text-white">Home</h3>
+        <h3 className="text-3xl font-bold text-center ">Home</h3>
         
         <div className="grid grid-cols-1 gap-y-6 gap-x-6 
         sm:grid-cols-1 

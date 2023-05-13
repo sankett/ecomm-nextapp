@@ -32,10 +32,10 @@ export default function CartPage() {
   }
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-20 bg-white dark:bg-black">
+    <main className="flex min-h-screen flex-col items-center justify-between p-20 bg-white ">
       <section className="flex flex-col space-y-2 ">
-        <h3 className="text-3xl font-bold text-center dark:text-white">Cart</h3>
-        <div className="grid grid-cols-1 gap-y-6 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8 dark:bg-black">
+        <h3 className="text-3xl font-bold text-center ">Cart</h3>
+        <div className="grid grid-cols-1 gap-y-6 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8 ">
           {isCartLoading &&
             tempData.map((product) => (
               <Cart key={product} isLoading={isCartLoading} />

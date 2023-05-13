@@ -6,12 +6,12 @@ export default async  function ProductPage( {params: { category }}) {
   const products = await res.json();
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-20 bg-white dark:bg-black">
-      <section className="flex flex-col space-y-12 pb-44">
-        <h3 className="text-3xl font-bold text-center dark:text-white">DEALS OF THE DAY</h3>
+    <main className="flex min-h-screen flex-col items-center justify-between px-1 pt-16 bg-white w-full">
+      <section className="flex flex-col space-y-12">
+        <h3 className="text-2xl font-bold text-center">DEALS OF THE DAY</h3>
         
         <Categories cat={decodeURI(category)}/>
-        <div className="grid grid-cols-1 gap-y-6 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8 dark:bg-black">
+        <div className="grid grid-cols-1 gap-y-2 gap-x-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8 ">
           
           {products.map((product) => (
             <Product key={product.id} product={product} />

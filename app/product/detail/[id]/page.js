@@ -7,12 +7,13 @@ export default async function ProductDetailPage({params: { id }}) {
     const product = await res.json();
 
   return (
-    <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-8 px-4 py-8 mt-12 pb-10 dark:bg-black">
+    <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-8 px-4 py-8 mt-12 pb-10 ">
+      
       <Image
           src={product.image}
           alt={product.title}
           width={400}
-          height={800}
+         height={400}
         />
 
       <div className="divide-y space-y-4">

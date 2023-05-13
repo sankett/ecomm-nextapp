@@ -2,22 +2,14 @@
 export default function About() {
 
     return (
-        <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-white dark:bg-black border border-red-600">
+        <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-white  border border-red-600">
         <section className="flex flex-col space-y-10  border border-blue-400">
-          <h1 className="text-3xl font-bold text-center dark:text-white">About</h1>
+          <h1 className="text-2xl font-bold text-center ">About</h1>
           <div className="border-solid border-2 px-3">
             This is test This is test This is test This is test This is test This is test 
             This is test This is test This is test This is test This is test This is test
             This is test This is test This is test 
-            This is test This is test This is test This is test This is test This is test 
-            This is test This is test This is test This is test This is test This is test
-            This is test This is test This is test 
-            This is test This is test This is test This is test This is test This is test 
-            This is test This is test This is test This is test This is test This is test
-            This is test This is test This is test 
-            This is test This is test This is test This is test This is test This is test 
-            This is test This is test This is test This is test This is test This is test
-            This is test This is test This is test 
+           
           </div>
           <div className="columns-3 border-solid border-solid border-2 divide-x">
             <p>Well, let me tell you something, ...</p>

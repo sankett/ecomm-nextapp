@@ -2,9 +2,9 @@
 export default function TestPage() {
 
     return (
-        <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-white dark:bg-black border border-red-600">
+        <main className="flex min-h-screen flex-col items-center justify-between p-24 bg-white  border border-red-600">
         <section className="flex flex-col space-y-10  border border-blue-400 w-500">
-          <h1 className="text-3xl font-bold text-center dark:text-white">Test</h1>
+          <h1 className="text-3xl font-bold text-center ">Test</h1>
           <div className="border-solid border-2 px-3">
           text goes here..text goes here..text goes here..text goes here..text goes here..
           </div>
