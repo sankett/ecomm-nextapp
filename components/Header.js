@@ -5,10 +5,16 @@ function Header() {
   return (
     <header className="flex items-center px-4 md:px-12 py-2 justify-between fixed top-0 w-full bg-white z-50 shadow">
       
-      <div className="text-4xl font-semibold text-blue-950">Next.JS <span className="text-amber-400">13.4</span> Demo</div>        
+      <div className="text-sm 
+       sm:text-lg 
+       md:text-2xl
+       lg:text-2xl
+       xl:text-2xl
+       2xl:text-2xl
+      font-semibold text-blue-950">Next.JS <span className="text-amber-400">13.4</span></div>        
      
       
-      <div className="flex items-center space-x-24 text-sm">
+      <div className="flex items-center space-x-8 text-sm">
         <Link href="/" className="button  border-transparent hover:border-blue-600 hover:bg-transparent hover:text-black">
           Home
         </Link>

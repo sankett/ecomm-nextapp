@@ -20,14 +20,14 @@ export default function Userclient() {
         {error && <div>An error has occurred.</div>}
        
         {isLoading && (
-          <div className="grid grid-cols-1 gap-y-2 gap-x-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xl:gap-x-8  dark:bg-black">
+          <div className="grid grid-cols-1 gap-y-2 gap-x-2 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 xl:gap-x-3">
             {tempData.map((user) => (
               <User key={user}  loading={true} />
             ))}
           </div>
         )}
         {data && (
-          <div className="grid grid-cols-1 gap-y-2 gap-x-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xl:gap-x-8   dark:bg-black">
+          <div className="grid grid-cols-1 gap-y-2 gap-x-2 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 xl:gap-x-3">
             {data.map((user) => (
               <User key={user.username} user={user} loading={false} />
             ))}
