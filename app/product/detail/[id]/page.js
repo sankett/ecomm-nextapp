@@ -49,8 +49,7 @@ export default async function ProductDetailPage({params: { id }}) {
           <button
             className="button w-full bg-blue-600 text-white border-transparent hover:border-blue-600 py-2"           
           >
-           Back
-            
+           Back            
           </button></Link>
         </div>
       </div>
