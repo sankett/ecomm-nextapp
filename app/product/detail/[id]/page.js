@@ -40,17 +40,18 @@ export default async function ProductDetailPage({params: { id }}) {
         </div>
 
         <div className="text-sm">
-          <button className="button w-full bg-blue-600 text-white border-transparent hover:border-blue-600 py-2">
-            <Link href="/cart/1">Add to bag</Link>
-          </button>
+        <Link href="/cart/1"><button className="button w-full bg-blue-600 text-white border-transparent hover:border-blue-600 py-2">
+            Add to bag
+          </button></Link>
         </div>
         <div className="text-sm">
+        <Link href="/product/all">
           <button
             className="button w-full bg-blue-600 text-white border-transparent hover:border-blue-600 py-2"           
           >
-            <Link href="/product/all">Back</Link>
+           Back
             
-          </button>
+          </button></Link>
         </div>
       </div>
     </div>

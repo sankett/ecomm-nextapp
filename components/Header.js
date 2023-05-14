@@ -15,19 +15,22 @@ function Header() {
       font-semibold text-white">Next.JS <sup className="text-white text-xs">13.4</sup></div>        
      
       
-      <div className="flex items-center space-x-4 text-sm text-white">
-        <Link href="/" className="button  border-transparent hover:border-blue-600 hover:bg-transparent hover:text-black">
+      <div className="flex items-center space-x-4 text-xs text-white">
+        <Link href="/" className="button  border-transparent hover:border-blue-600 hover:bg-transparent hover:text-yellow-500">
           Home
         </Link>
-        <Link href="/product/all" className="button  border-transparent hover:border-blue-600 hover:bg-transparent hover:text-black">
+        <Link href="/product/all" className="button  border-transparent hover:border-blue-600 hover:bg-transparent hover:text-yellow-500">
           Products
         </Link>
-        <Link href="/cart/1" className="button  border-transparent hover:border-blue-600 hover:bg-transparent hover:text-black">
+        <Link href="/cart/1" className="button  border-transparent hover:border-blue-600 hover:bg-transparent hover:text-yellow-500">
           Cart
         </Link>
-        <Link href="/user" className="button  border-transparent hover:border-blue-600 hover:bg-transparent hover:text-black">
+        <Link href="/user" className="button  border-transparent hover:border-blue-600 hover:bg-transparent hover:text-yellow-500">
           Users
         </Link>
+        <div className="">
+        <Image src="https://storybook7.blob.core.windows.net/images/signature.jpg" width={130} height={250} />
+        </div>
       </div>
      
     </header>

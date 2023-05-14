@@ -7,7 +7,7 @@ export default function Cart({ product, isLoading= false }) {
     return (
         <Link 
         href={`/product/detail/${isLoading ? "" : product.id}`}
-        className="h-46 flex flex-col p-5 rounded border group hover:scale-105 transition-transform ease-out duration-200"
+        className="h-46 w-full flex flex-col p-1 rounded border group hover:scale-105 transition-transform ease-out duration-200"
         >  
           <div className="relative max-h-72 flex-1">
           {!isLoading && <Image

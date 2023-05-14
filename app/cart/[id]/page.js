@@ -35,7 +35,7 @@ export default function CartPage() {
   }
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-20 bg-white ">
+    <main className="flex flex-col min-h-screen  items-center justify-between p-20 bg-white w-full ">
       <section className="flex flex-col space-y-2 ">
         <h3 className="text-3xl font-bold text-center ">Cart</h3>
         <div className="grid grid-cols-1 gap-y-6 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8 ">
