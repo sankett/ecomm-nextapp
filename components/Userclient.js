@@ -12,6 +12,7 @@ export default function Userclient() {
     fetcher
   );
 
+  console.log(data)
   return (
     <div>
         <div className="text-sm font-bold text-emerald-500">React Client Component 
@@ -29,7 +30,7 @@ export default function Userclient() {
         {data && (
           <div className="grid grid-cols-1 gap-y-1 gap-x-2 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 xl:gap-x-3">
             {data.map((user) => (
-              <User key={user.username} user={user} loading={false} />
+              <User key={user.id} user={user} loading={false} />
             ))}
           </div>
         )}

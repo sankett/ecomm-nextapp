@@ -23,7 +23,7 @@ export default function Cart({ product, isLoading= false }) {
             className="scale-110 blur-sm grayscale object-contain duration-700 ease-in-out group-hover:opacity-75"   
           /> }
           </div>
-          <div className="items-center justify-between mt-4 mb-1 dark:text-slate-400">
+          <div className="items-center justify-between mt-4 mb-1">
             <p className={`w-44 text-sm font-semibold ${blur}`}>{isLoading ? "Loading.." : product.title} </p>
             <p className={`text-sm ${blur}`}>Price: {isLoading ? "Loading.." : product.price} </p>
             <p className={`text-sm ${blur}`}>Quantity: {isLoading ? "Loading.." : product.quantity}</p>

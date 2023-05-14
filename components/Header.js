@@ -22,7 +22,7 @@ function Header() {
         <Link href="/product/all" className="button  border-transparent hover:border-blue-600 hover:bg-transparent hover:text-black">
           Products
         </Link>
-        <Link href="/cart" className="button  border-transparent hover:border-blue-600 hover:bg-transparent hover:text-black">
+        <Link href="/cart/1" className="button  border-transparent hover:border-blue-600 hover:bg-transparent hover:text-black">
           Cart
         </Link>
         <Link href="/user" className="button  border-transparent hover:border-blue-600 hover:bg-transparent hover:text-black">

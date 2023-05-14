@@ -5,6 +5,8 @@ export default async  function ProductPage( {params: { category }}) {
   const res = await fetch(url);
   const products = await res.json();
 
+  console.log("Product age goe here..")
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-between px-1 pt-16 bg-white w-full">
       <section className="flex flex-col space-y-12">

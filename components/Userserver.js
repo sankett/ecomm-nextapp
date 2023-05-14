@@ -6,7 +6,7 @@ export default async function Userserver() {
    
   const res = await fetch("https://fakestoreapi.com/users");
   const data = await res.json();
- 
+  console.log("user server component age goe here..")
   return (
     <div>
        <div className="text-sm font-bold text-blue-500">React Server Component 

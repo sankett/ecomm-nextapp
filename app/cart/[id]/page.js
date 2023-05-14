@@ -9,7 +9,10 @@ import useSWR from "swr";
 const fetcher = (url) => fetch(url).then((res) => res.json());
 import Cart from "@/components/Cart";
 export default function CartPage() {
+  console.log("Cart Page goe here..")
   const router = useRouter();
+  
+  
   const [tempData] = useState([1, 2, 3, 4]);
   const { products, isLoading, isError } = useProduct();
   const { cart, isCartLoading, isCartError } = useCart(1);

@@ -3,9 +3,12 @@ import Link from "next/link";
 
 export default async function ProductDetailPage({params: { id }}) {
 
-    const res = await fetch(`https://fakestoreapi.com/products/${id}`);
+    const res = await fetch(`https://fakestoreapi.com/products/${id}`, { next: { revalidate: 600 } });
     const product = await res.json();
+    product["oprice"] = product.price;
+    product.price += Math.floor(Math.random() * 4) + 1
 
+    
   return (
     <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-8 px-4 py-8 mt-12 pb-10 ">
       
@@ -22,7 +25,7 @@ export default async function ProductDetailPage({params: { id }}) {
             {product.title}&nbsp;
           </h1>
           <h2 className="text-gray-500 font-bold text-xl md:text-3xl">
-            ${product.price}&nbsp;
+            ${product.price}&nbsp; <span className="text-sm">[previous: ${product.oprice}]</span>
           </h2>
         </div>
         <div className="flex items-center text-sm my-4">
@@ -33,11 +36,12 @@ export default async function ProductDetailPage({params: { id }}) {
         </div>
         <div className="pt-8">
             <p className="text-xs md:text-sm">{product?.description}</p>
+            <p className="text-xs md:text-sm">{product?.currentTime}</p>
         </div>
 
         <div className="text-sm">
           <button className="button w-full bg-blue-600 text-white border-transparent hover:border-blue-600 py-2">
-            <Link href="/cart">Add to bag</Link>
+            <Link href="/cart/1">Add to bag</Link>
           </button>
         </div>
         <div className="text-sm">

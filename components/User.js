@@ -1,3 +1,4 @@
+import Link from "next/link";
 export default function User({ user, loading }) {
     const blur = loading ? "scale-100 blur-[2px] grayscale-0" : ""
   return (
@@ -11,6 +12,10 @@ export default function User({ user, loading }) {
         <p className={`text-xs  italic mt-2 ${blur}`}>
           Address:{loading ? "loading" : user.address.street}, {loading ? "loading" : user.address.city}, zip:{" "}
           {loading ? "loading" :user.address.zipcode}
+        </p>
+        <p className={`text-xs text-blue-400  mt-2 ${blur}` }>
+        <Link key={loading ? "Loading.." :user.id} 
+        href={{pathname:`/cart/${loading ? "Loading.." :user.id}`}}>View My Cart</Link>
         </p>
       </div>
     </div>
