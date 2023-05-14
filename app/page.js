@@ -49,7 +49,7 @@ export default function Home() {
               href="/user"
               className="text-blue-600 text-sm underline font-bold"
             >
-              Click here (/user)
+              Click here
             </Link>
           </div>
           </li>
@@ -66,14 +66,14 @@ export default function Home() {
               href="/product/all"
               className="text-blue-600 text-sm underline font-bold"
             >
-              Click here (product/[category]){" "}
+              Click here 
             </Link>
             <br></br>&nbsp;- each product with a route based on its id&nbsp;
             <Link
               href="/product/detail/1"
               className="text-blue-600 text-sm underline font-bold"
             >
-              Click here (product/detail/[id])
+              Click here 
             </Link>
             <br></br>The data will be fetched from a API. This page will look
             the same for all users.
@@ -93,7 +93,7 @@ export default function Home() {
               href="/cart/1"
               className="text-blue-600 text-sm underline font-bold"
             >
-              Click here (cart/1)
+              Click here
             </Link>
           </div>
           </li>
